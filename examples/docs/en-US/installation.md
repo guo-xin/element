@@ -8,21 +8,21 @@ Note that this doc is for 1.x, so you need the `legacy` tag when installing.
 :::
 
 ```shell
-npm i element-ui@legacy -S
+npm i qfpay-element-ui@legacy -S
 ```
 
 ### CDN
-Get the latest version from [unpkg.com/element-ui](https://unpkg.com/element-ui@1.4/) , and import JavaScript and CSS file in your page.
+Get the latest version from [unpkg.com/qfpay-element-ui](https://unpkg.com/qfpay-element-ui@1.4/) , and import JavaScript and CSS file in your page.
 
 ```html
 <!-- import CSS -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">
+<link rel="stylesheet" href="https://unpkg.com/qfpay-element-ui@1.4/lib/theme-default/index.css">
 <!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui@1.4/lib/index.js"></script>
+<script src="https://unpkg.com/qfpay-element-ui@1.4/lib/index.js"></script>
 ```
 
 :::tip
-We recommend our users to lock Element's version when using CDN. For example, if you're using Element 1.4.8, you can lock CSS and JavaScript files like this: `https://unpkg.com/element-ui@1.4.8/lib/theme-default/index.css`, `https://unpkg.com/element-ui@1.4.8/lib/index.js`.
+We recommend our users to lock Element's version when using CDN. For example, if you're using Element 1.4.8, you can lock CSS and JavaScript files like this: `https://unpkg.com/qfpay-element-ui@1.4.8/lib/theme-default/index.css`, `https://unpkg.com/qfpay-element-ui@1.4.8/lib/index.js`.
 :::
 
 ### Hello world
@@ -34,7 +34,7 @@ If you are using CDN, a hello-world page is easy with Element. [Online Demo](htt
 <head>
   <meta charset="UTF-8">
   <!-- import CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/qfpay-element-ui@1.4/lib/theme-default/index.css">
 </head>
 <body>
   <div id="app">
@@ -47,7 +47,7 @@ If you are using CDN, a hello-world page is easy with Element. [Online Demo](htt
   <!-- import Vue before Element -->
   <script src="https://unpkg.com/vue@2.5/dist/vue.js"></script>
   <!-- import JavaScript -->
-  <script src="https://unpkg.com/element-ui@1.4/lib/index.js"></script>
+  <script src="https://unpkg.com/qfpay-element-ui@1.4/lib/index.js"></script>
   <script>
     new Vue({
       el: '#app',

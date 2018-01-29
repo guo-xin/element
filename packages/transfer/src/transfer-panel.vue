@@ -46,10 +46,10 @@
 </template>
 
 <script>
-  import ElCheckboxGroup from 'element-ui/packages/checkbox-group';
-  import ElCheckbox from 'element-ui/packages/checkbox';
-  import ElInput from 'element-ui/packages/input';
-  import Locale from 'element-ui/src/mixins/locale';
+  import ElCheckboxGroup from 'qfpay-element-ui/packages/checkbox-group';
+  import ElCheckbox from 'qfpay-element-ui/packages/checkbox';
+  import ElInput from 'qfpay-element-ui/packages/input';
+  import Locale from 'qfpay-element-ui/src/mixins/locale';
 
   export default {
     mixins: [Locale],

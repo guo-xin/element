@@ -13,8 +13,8 @@
   </el-menu-collapse-transition>
 </template>
 <script>
-  import emitter from 'element-ui/src/mixins/emitter';
-  import { addClass, removeClass, hasClass } from 'element-ui/src/utils/dom';
+  import emitter from 'qfpay-element-ui/src/mixins/emitter';
+  import { addClass, removeClass, hasClass } from 'qfpay-element-ui/src/utils/dom';
 
   export default {
     name: 'ElMenu',

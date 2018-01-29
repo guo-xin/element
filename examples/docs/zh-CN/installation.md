@@ -8,7 +8,7 @@
 :::
 
 ```shell
-npm i element-ui@legacy -S
+npm i qfpay-element-ui@legacy -S
 ```
 
 ### CDN
@@ -22,7 +22,7 @@ npm i element-ui@legacy -S
 ```
 
 :::tip
-我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element 升级时受到非兼容性更新的影响。例如，如需锁定版本为 1.4.8，则 CSS 和 JavaScript 文件的地址分别是 `https://unpkg.com/element-ui@1.4.8/lib/theme-default/index.css` 和 `https://unpkg.com/element-ui@1.4.8/lib/index.js`。
+我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element 升级时受到非兼容性更新的影响。例如，如需锁定版本为 1.4.8，则 CSS 和 JavaScript 文件的地址分别是 `https://unpkg.com/element-ui@1.4.8/lib/theme-default/index.css` 和 `https://unpkg.com/qfpay-element-ui@1.4.8/lib/index.js`。
 :::
 
 ### Hello world

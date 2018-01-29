@@ -9,7 +9,7 @@ SUB_FOLDER='1.4'
 mkdir $SUB_FOLDER
 
 rm -rf $SUB_FOLDER/**
-cp -rf ../../examples/element-ui/** $SUB_FOLDER/
+cp -rf ../../examples/qfpay-element-ui/** $SUB_FOLDER/
 cd ../..
 
 # deploy domestic site

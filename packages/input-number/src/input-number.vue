@@ -44,8 +44,8 @@
   </div>
 </template>
 <script>
-  import ElInput from 'element-ui/packages/input';
-  import { once, on } from 'element-ui/src/utils/dom';
+  import ElInput from 'qfpay-element-ui/packages/input';
+  import { once, on } from 'qfpay-element-ui/src/utils/dom';
   import debounce from 'throttle-debounce/debounce';
 
   export default {

@@ -42,7 +42,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "legacy",
+    "qfpay-element-ui": "legacy",
     "vue": "2.5.2"
   },
   "devDependencies": {
@@ -136,8 +136,8 @@ if (process.env.NODE_ENV === 'production') {
 在 main.js 中写入以下内容：
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import ElementUI from 'qfpay-element-ui'
+import 'qfpay-element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
@@ -167,7 +167,7 @@ npm install babel-plugin-component -D
   ],
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "qfpay-element-ui",
       "styleLibraryName": "theme-default"
     }
   ]]]
@@ -178,7 +178,7 @@ npm install babel-plugin-component -D
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select } from 'qfpay-element-ui'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)
@@ -261,7 +261,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui'
+} from 'qfpay-element-ui'
 
 Vue.use(Pagination)
 Vue.use(Dialog)

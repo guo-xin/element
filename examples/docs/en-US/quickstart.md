@@ -42,7 +42,7 @@ Typical configurations for these config files are:
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "legacy",
+    "qfpay-element-ui": "legacy",
     "vue": "2.5.2"
   },
   "devDependencies": {
@@ -136,11 +136,11 @@ You can import Element entirely, or just import what you need. Let's start with 
 In main.js:
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import QfpayElementUI from 'qfpay-element-ui'
+import 'qfpay-element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
-Vue.use(ElementUI)
+Vue.use(QfpayElementUI)
 
 new Vue({
   el: '#app',
@@ -167,7 +167,7 @@ Then edit .babelrc:
   ],
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "qfpay-element-ui",
       "styleLibraryName": "theme-default"
     }
   ]]]
@@ -178,7 +178,7 @@ Next, if you need Button and Select, edit main.js:
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select } from 'qfpay-element-ui'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)
@@ -261,7 +261,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui'
+} from 'qfpay-element-ui'
 
 Vue.use(Pagination)
 Vue.use(Dialog)

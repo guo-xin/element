@@ -16,8 +16,8 @@
 
 <script>
   import TreeStore from './model/tree-store';
-  import {t} from 'element-ui/src/locale';
-  import emitter from 'element-ui/src/mixins/emitter';
+  import {t} from 'qfpay-element-ui/src/locale';
+  import emitter from 'qfpay-element-ui/src/mixins/emitter';
 
   export default {
     name: 'ElTree',

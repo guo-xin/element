@@ -269,7 +269,7 @@ Element has added the following global methods for Vue.prototype: `$msgbox`, `$a
 Import `MessageBox`:
 
 ```javascript
-import { MessageBox } from 'element-ui';
+import { MessageBox } from 'qfpay-element-ui';
 ```
 
 The corresponding methods are: `MessageBox`, `MessageBox.alert`, `MessageBox.confirm` and `MessageBox.prompt`.
@@ -278,24 +278,24 @@ The corresponding methods are: `MessageBox`, `MessageBox.alert`, `MessageBox.con
 
 | Attribute      | Description          | Type      | Accepted Values       | Default  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| title | title of the MessageBox | string | — | — |
-| message | content of the MessageBox | string | — | — |
-| type | message type, used for icon display | string | success/info/warning/error | — |
-| customClass | custom class name for MessageBox | string | — | — |
-| callback | MessageBox closing callback if you don't prefer Promise | function(action), where action can be 'confirm' or 'cancel', and `instance` is the MessageBox instance. You can access to that instance's attributes and methods | — | — |
-| beforeClose | callback before MessageBox closes, and it will prevent MessageBox from closing | function(action, instance, done), where `action` can be 'confirm' or 'cancel'; `instance` is the MessageBox instance, and you can access to that instance's attributes and methods; `done` is for closing the instance | — | — |
-| lockScroll | whether to lock body scroll when MessageBox prompts | boolean | — | true |
-| showCancelButton | whether to show a cancel button | boolean | — | false (true when called with confirm and prompt) |
-| showConfirmButton | whether to show a confirm button | boolean | — | true |
-| cancelButtonText | text content of cancel button | string | — | Cancel |
-| confirmButtonText | text content of confirm button | string | — | OK |
-| cancelButtonClass | custom class name of cancel button | string | — | — |
-| confirmButtonClass | custom class name of confirm button | string | — | — |
-| closeOnClickModal | whether MessageBox can be closed by clicking the mask | boolean | — | true (false when called with alert) |
-| closeOnPressEscape | whether MessageBox can be closed by pressing the ESC | boolean | — | true (false when called with alert) |
-| showInput | whether to show an input | boolean | — | false (true when called with prompt) |
-| inputPlaceholder | placeholder of input | string | — | — |
-| inputValue | initial value of input | string | — | — |
-| inputPattern | regexp for the input | regexp | — | — |
-| inputValidator | validation function for the input. Should returns a boolean or string. If a string is returned, it will be assigned to inputErrorMessage | function | — | — |
-| inputErrorMessage | error message when validation fails | string | — | Illegal input |
+| title | title of the MessageBox | string | ??? | ??? |
+| message | content of the MessageBox | string | ??? | ??? |
+| type | message type, used for icon display | string | success/info/warning/error | ??? |
+| customClass | custom class name for MessageBox | string | ??? | ??? |
+| callback | MessageBox closing callback if you don't prefer Promise | function(action), where action can be 'confirm' or 'cancel', and `instance` is the MessageBox instance. You can access to that instance's attributes and methods | ??? | ??? |
+| beforeClose | callback before MessageBox closes, and it will prevent MessageBox from closing | function(action, instance, done), where `action` can be 'confirm' or 'cancel'; `instance` is the MessageBox instance, and you can access to that instance's attributes and methods; `done` is for closing the instance | ??? | ??? |
+| lockScroll | whether to lock body scroll when MessageBox prompts | boolean | ??? | true |
+| showCancelButton | whether to show a cancel button | boolean | ??? | false (true when called with confirm and prompt) |
+| showConfirmButton | whether to show a confirm button | boolean | ??? | true |
+| cancelButtonText | text content of cancel button | string | ??? | Cancel |
+| confirmButtonText | text content of confirm button | string | ??? | OK |
+| cancelButtonClass | custom class name of cancel button | string | ??? | ??? |
+| confirmButtonClass | custom class name of confirm button | string | ??? | ??? |
+| closeOnClickModal | whether MessageBox can be closed by clicking the mask | boolean | ??? | true (false when called with alert) |
+| closeOnPressEscape | whether MessageBox can be closed by pressing the ESC | boolean | ??? | true (false when called with alert) |
+| showInput | whether to show an input | boolean | ??? | false (true when called with prompt) |
+| inputPlaceholder | placeholder of input | string | ??? | ??? |
+| inputValue | initial value of input | string | ??? | ??? |
+| inputPattern | regexp for the input | regexp | ??? | ??? |
+| inputValidator | validation function for the input. Should returns a boolean or string. If a string is returned, it will be assigned to inputErrorMessage | function | ??? | ??? |
+| inputErrorMessage | error message when validation fails | string | ??? | Illegal input |
