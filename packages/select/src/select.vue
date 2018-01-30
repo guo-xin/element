@@ -251,8 +251,8 @@
         if (this.filterable && !this.multiple) {
           this.inputLength = 20;
         }
-        this.$emit('change', val);
-        this.dispatch('ElFormItem', 'el.form.change', val);
+        this.$emit('change', val, this.selected.label, this.selected.index);
+        this.dispatch('ElFormItem', 'el.form.change', val, this.selected.label, this.selected.index);
       },
 
       query(val) {

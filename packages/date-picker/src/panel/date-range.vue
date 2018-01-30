@@ -385,7 +385,15 @@
           return;
         }
         this.onPick && this.onPick(val);
+        // 设置结束时间为23:59:59
         this.maxDate = val.maxDate;
+        if (val.maxDate) {
+          let dateTime = val.maxDate;
+          dateTime.setHours(23);
+          dateTime.setMinutes(59);
+          dateTime.setSeconds(59);
+          this.maxDate = dateTime;
+        }
         this.minDate = val.minDate;
 
         // workaround for https://github.com/ElemeFE/element/issues/7539, should remove this block when we don't have to care about Chromium 55 - 57

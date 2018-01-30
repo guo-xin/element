@@ -93,8 +93,8 @@
         this.navStyle.transform = `translateX(-${value}px)`;
       },
       update() {
-        const navWidth = this.$refs.nav.offsetWidth;
-        const containerWidth = this.$refs.navScroll.offsetWidth;
+        const navWidth = (this.$refs.nav || {}).offsetWidth;
+        const containerWidth = (this.$refs.navScroll || {}).offsetWidth;
         const currentOffset = this.getCurrentScrollOffset();
 
         if (containerWidth < navWidth) {
