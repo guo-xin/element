@@ -86,5 +86,9 @@ Please make sure to read the contributing guide ([中文](https://github.com/Ele
 English documentation is brought to you by SwiftGG Translation Team. Our special thanks go to these fellows:
 - [guoxin](https://github.com/guo-xin)
 
+## Donation
+If you find Element useful, you can buy us a cup of coffee
+<img width="650" src="pay.png" alt="pay">
+
 ## LICENSE
 MIT
