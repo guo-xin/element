@@ -18,8 +18,8 @@ In main.js:
 
 ```javascript
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'qfpay-element-ui';
+import 'qfpay-element-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 
 Vue.use(ElementUI);
@@ -51,7 +51,7 @@ Then edit .babelrc:
     [
       "component",
       {
-        "libraryName": "element-ui",
+        "libraryName": "qfpay-element-ui",
         "styleLibraryName": "theme-chalk"
       }
     ]
@@ -63,7 +63,7 @@ Next, if you need Button and Select, edit main.js:
 
 ```javascript
 import Vue from 'vue';
-import { Button, Select } from 'element-ui';
+import { Button, Select } from 'qfpay-element-ui';
 import App from './App.vue';
 
 Vue.component(Button.name, Button);
@@ -151,7 +151,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui';
+} from 'qfpay-element-ui';
 
 Vue.use(Pagination);
 Vue.use(Dialog);
@@ -236,7 +236,7 @@ Fully import Element：
 
 ```js
 import Vue from 'vue';
-import Element from 'element-ui';
+import Element from 'qfpay-element-ui';
 Vue.use(Element, { size: 'small', zIndex: 3000 });
 ```
 
@@ -244,7 +244,7 @@ Partial import Element：
 
 ```js
 import Vue from 'vue';
-import { Button } from 'element-ui';
+import { Button } from 'qfpay-element-ui';
 
 Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
 Vue.use(Button);

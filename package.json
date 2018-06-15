@@ -1,8 +1,8 @@
 {
-  "name": "element-ui",
-  "version": "2.4.1",
+  "name": "qfpay-element-ui",
+  "version": "2.0.0",
   "description": "A Component Library for Vue.js.",
-  "main": "lib/element-ui.common.js",
+  "main": "lib/qfpay-element-ui.common.js",
   "files": [
     "lib",
     "src",
@@ -17,8 +17,8 @@
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "build:umd": "node build/bin/build-locale.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
-    "deploy": "npm run deploy:build && gh-pages -d examples/element-ui --remote eleme && del examples/element-ui",
-    "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo element.eleme.io>>examples/element-ui/CNAME",
+    "deploy": "npm run deploy:build && gh-pages -d examples/qfpay-element-ui --remote eleme && del examples/qfpay-element-ui",
+    "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo element.eleme.io>>examples/qfpay-element-ui/CNAME",
     "dev": "npm run bootstrap && npm run build:file && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js & node build/bin/template.js",
     "dev:play": "npm run build:file && cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
     "dist": "npm run clean && npm run build:file && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:utils && npm run build:umd && npm run build:theme",
@@ -34,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "https://github.com/guo-xin/qfpay-element-ui.git"
   },
-  "homepage": "http://element.eleme.io",
+  "homepage": "https://github.com/guo-xin/qfpay-element-ui.git",
   "keywords": [
     "eleme",
     "vue",
@@ -54,7 +54,8 @@
     "deepmerge": "^1.2.0",
     "normalize-wheel": "^1.0.1",
     "resize-observer-polyfill": "^1.5.0",
-    "throttle-debounce": "^1.0.1"
+    "throttle-debounce": "^1.0.1",
+    "yarn": "^1.7.0"
   },
   "peerDependencies": {
     "vue": "^2.5.2"

@@ -7,11 +7,11 @@ lerna-debug.log.*
 lib
 .idea
 .vscode
-examples/element-ui
+examples/qfpay-element-ui
 examples/pages/en-US
 examples/pages/zh-CN
 examples/pages/es
-fe.element/element-ui
+fe.element/qfpay-element-ui
 .npmrc
 coverage
 waiter.config.js

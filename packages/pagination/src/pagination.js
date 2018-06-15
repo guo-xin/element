@@ -1,9 +1,9 @@
 import Pager from './pager.vue';
-import ElSelect from 'element-ui/packages/select';
-import ElOption from 'element-ui/packages/option';
-import ElInput from 'element-ui/packages/input';
-import Locale from 'element-ui/src/mixins/locale';
-import { valueEquals } from 'element-ui/src/utils/util';
+import ElSelect from 'qfpay-element-ui/packages/select';
+import ElOption from 'qfpay-element-ui/packages/option';
+import ElInput from 'qfpay-element-ui/packages/input';
+import Locale from 'qfpay-element-ui/src/mixins/locale';
+import { valueEquals } from 'qfpay-element-ui/src/utils/util';
 
 export default {
   name: 'ElPagination',

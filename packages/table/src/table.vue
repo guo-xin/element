@@ -213,12 +213,12 @@
 </template>
 
 <script type="text/babel">
-  import ElCheckbox from 'element-ui/packages/checkbox';
+  import ElCheckbox from 'qfpay-element-ui/packages/checkbox';
   import debounce from 'throttle-debounce/debounce';
-  import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
-  import Mousewheel from 'element-ui/src/directives/mousewheel';
-  import Locale from 'element-ui/src/mixins/locale';
-  import Migrating from 'element-ui/src/mixins/migrating';
+  import { addResizeListener, removeResizeListener } from 'qfpay-element-ui/src/utils/resize-event';
+  import Mousewheel from 'qfpay-element-ui/src/directives/mousewheel';
+  import Locale from 'qfpay-element-ui/src/mixins/locale';
+  import Migrating from 'qfpay-element-ui/src/mixins/migrating';
   import TableStore from './table-store';
   import TableLayout from './table-layout';
   import TableBody from './table-body';

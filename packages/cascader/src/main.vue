@@ -61,14 +61,14 @@
 <script>
 import Vue from 'vue';
 import ElCascaderMenu from './menu';
-import ElInput from 'element-ui/packages/input';
-import Popper from 'element-ui/src/utils/vue-popper';
-import Clickoutside from 'element-ui/src/utils/clickoutside';
-import emitter from 'element-ui/src/mixins/emitter';
-import Locale from 'element-ui/src/mixins/locale';
-import { t } from 'element-ui/src/locale';
+import ElInput from 'qfpay-element-ui/packages/input';
+import Popper from 'qfpay-element-ui/src/utils/vue-popper';
+import Clickoutside from 'qfpay-element-ui/src/utils/clickoutside';
+import emitter from 'qfpay-element-ui/src/mixins/emitter';
+import Locale from 'qfpay-element-ui/src/mixins/locale';
+import { t } from 'qfpay-element-ui/src/locale';
 import debounce from 'throttle-debounce/debounce';
-import { generateId } from 'element-ui/src/utils/util';
+import { generateId } from 'qfpay-element-ui/src/utils/util';
 
 const popperMixin = {
   props: {

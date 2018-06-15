@@ -198,12 +198,12 @@
     extractDateFormat,
     extractTimeFormat
   } from '../util';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import Locale from 'element-ui/src/mixins/locale';
+  import Clickoutside from 'qfpay-element-ui/src/utils/clickoutside';
+  import Locale from 'qfpay-element-ui/src/mixins/locale';
   import TimePicker from './time';
   import DateTable from '../basic/date-table';
-  import ElInput from 'element-ui/packages/input';
-  import ElButton from 'element-ui/packages/button';
+  import ElInput from 'qfpay-element-ui/packages/input';
+  import ElButton from 'qfpay-element-ui/packages/button';
 
   const advanceDate = (date, amount) => {
     return new Date(new Date(date).getTime() + amount);
@@ -505,7 +505,15 @@
           return;
         }
         this.onPick && this.onPick(val);
-        this.maxDate = maxDate;
+        // 设置结束时间为23:59:59
+        this.maxDate = val.maxDate;
+        if (val.maxDate) {
+          let dateTime = val.maxDate;
+          dateTime.setHours(23);
+          dateTime.setMinutes(59);
+          dateTime.setSeconds(59);
+          this.maxDate = dateTime;
+        }
         this.minDate = minDate;
 
         // workaround for https://github.com/ElemeFE/element/issues/7539, should remove this block when we don't have to care about Chromium 55 - 57
