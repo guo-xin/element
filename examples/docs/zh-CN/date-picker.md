@@ -89,7 +89,7 @@
       border-right: none;
     }
   }
-  
+
   .demo-date-picker .container {
     flex: 1;
     border-right: solid 1px #EFF2F6;
@@ -264,11 +264,21 @@
       v-model="value7"
       type="daterange"
       align="right"
-      unlink-panels
       range-separator="至"
       start-placeholder="开始日期"
       end-placeholder="结束日期"
       :picker-options="pickerOptions2">
+    </el-date-picker>
+  </div>
+  <div class="block">
+    <span class="demonstration">单面板不跨月</span>
+    <el-date-picker
+      v-model="value8"
+      type="daterange"
+      unlink-panels
+      range-separator="至"
+      start-placeholder="开始日期"
+      end-placeholder="结束日期">
     </el-date-picker>
   </div>
 </template>
@@ -305,7 +315,8 @@
           }]
         },
         value6: '',
-        value7: ''
+        value7: '',
+        value8: ''
       };
     }
   };
