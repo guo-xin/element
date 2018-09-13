@@ -3,6 +3,17 @@
 @include b(date-range-picker) {
   width: 646px;
 
+  &.single-panel {
+    width: 322px;
+    .el-picker-panel__body {
+      min-width: auto;
+    }
+    .el-date-range-picker__content {
+      float: none;
+      width: auto;
+    }
+  }
+
   &.has-sidebar {
     width: 756px;
   }

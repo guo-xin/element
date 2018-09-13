@@ -5,7 +5,8 @@
       class="el-picker-panel el-date-range-picker el-popper"
       :class="[{
         'has-sidebar': $slots.sidebar || shortcuts,
-        'has-time': showTime
+        'has-time': showTime,
+        'single-panel': unlinkPanels
       }, popperClass]">
       <div class="el-picker-panel__body-wrapper">
         <slot name="sidebar" class="el-picker-panel__sidebar"></slot>
@@ -121,7 +122,7 @@
               @pick="handleRangePick">
             </date-table>
           </div>
-          <div class="el-picker-panel__content el-date-range-picker__content is-right">
+          <div class="el-picker-panel__content el-date-range-picker__content is-right" v-if="!unlinkPanels">
             <div class="el-date-range-picker__header">
               <button
                 type="button"
@@ -565,6 +566,9 @@
         this.leftDate = prevYear(this.leftDate);
         if (!this.unlinkPanels) {
           this.rightDate = nextMonth(this.leftDate);
+        } else {
+          this.minDate = null;
+          this.maxDate = null;
         }
       },
 
@@ -572,6 +576,9 @@
         this.leftDate = prevMonth(this.leftDate);
         if (!this.unlinkPanels) {
           this.rightDate = nextMonth(this.leftDate);
+        } else {
+          this.minDate = null;
+          this.maxDate = null;
         }
       },
 
@@ -596,10 +603,18 @@
       // leftNext*, rightPrev* are called when `unlinkPanels` is true
       leftNextYear() {
         this.leftDate = nextYear(this.leftDate);
+        if (this.unlinkPanels) {
+          this.minDate = null;
+          this.maxDate = null;
+        }
       },
 
       leftNextMonth() {
         this.leftDate = nextMonth(this.leftDate);
+        if (this.unlinkPanels) {
+          this.minDate = null;
+          this.maxDate = null;
+        }
       },
 
       rightPrevYear() {
