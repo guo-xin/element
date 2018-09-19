@@ -297,11 +297,12 @@
       enableMonthArrow() {
         const nextMonth = (this.leftMonth + 1) % 12;
         const yearOffset = this.leftMonth + 1 >= 12 ? 1 : 0;
-        return this.unlinkPanels && new Date(this.leftYear + yearOffset, nextMonth) < new Date(this.rightYear, this.rightMonth);
+        return this.unlinkPanels && new Date(this.leftYear + yearOffset, nextMonth) < new Date();
       },
 
       enableYearArrow() {
-        return this.unlinkPanels && this.rightYear * 12 + this.rightMonth - (this.leftYear * 12 + this.leftMonth + 1) >= 12;
+        let today = new Date();
+        return this.unlinkPanels && (today.getFullYear() * 12 + today.getMonth() + 1) - (this.leftYear * 12 + this.leftMonth + 1) >= 12;
       }
     },
 
